@@ -41,6 +41,12 @@ const CaseStudyPage = () => {
                     </div>
                     <h1 className="case-study-title">{project.title}</h1>
                     <p className="case-study-subtitle">{project.description}</p>
+                    <a href="#project-details" className="btn btn-primary case-study-cta-btn">
+                        Find out more
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </a>
                 </div>
             </header>
 
@@ -53,41 +59,56 @@ const CaseStudyPage = () => {
                 </div>
             )}
 
-            {/* Project Info Grid */}
-            <section className="case-study-section">
+            {/* Project Details Section */}
+            <section id="project-details" className="case-study-section">
                 <div className="container">
-                    <div className="case-study-info-grid">
+                    {/* Summary */}
+                    <div className="case-study-summary">
+                        <h2 className="case-study-section-title">Summary</h2>
+                        <div className="case-study-content">
+                            <p>{project.description}</p>
+                        </div>
+                    </div>
+
+                    {/* Project Meta Info - Two Column Layout */}
+                    <div className="case-study-meta-row">
                         {project.companyType && (
-                            <div className="case-study-info-item">
-                                <span className="case-study-info-label">Company</span>
-                                <span className="case-study-info-value">{project.companyType}</span>
+                            <div className="case-study-meta-item">
+                                <span className="case-study-meta-label">Company Type</span>
+                                <span className="case-study-meta-value">{project.companyType}</span>
                             </div>
                         )}
                         {project.role && (
-                            <div className="case-study-info-item">
-                                <span className="case-study-info-label">Role</span>
-                                <span className="case-study-info-value">{project.role}</span>
-                            </div>
-                        )}
-                        {project.duration && (
-                            <div className="case-study-info-item">
-                                <span className="case-study-info-label">Duration</span>
-                                <span className="case-study-info-value">{project.duration}</span>
-                            </div>
-                        )}
-                        {project.team && (
-                            <div className="case-study-info-item">
-                                <span className="case-study-info-label">Team</span>
-                                <span className="case-study-info-value">{project.team}</span>
-                            </div>
-                        )}
-                        {project.platform && (
-                            <div className="case-study-info-item">
-                                <span className="case-study-info-label">Platform</span>
-                                <span className="case-study-info-value">{project.platform}</span>
+                            <div className="case-study-meta-item">
+                                <span className="case-study-meta-label">Role</span>
+                                <span className="case-study-meta-value">{project.role}</span>
                             </div>
                         )}
                     </div>
+
+                    {/* Additional Info Grid */}
+                    {(project.duration || project.team || project.platform) && (
+                        <div className="case-study-info-grid">
+                            {project.duration && (
+                                <div className="case-study-info-item">
+                                    <span className="case-study-info-label">Duration</span>
+                                    <span className="case-study-info-value">{project.duration}</span>
+                                </div>
+                            )}
+                            {project.team && (
+                                <div className="case-study-info-item">
+                                    <span className="case-study-info-label">Team</span>
+                                    <span className="case-study-info-value">{project.team}</span>
+                                </div>
+                            )}
+                            {project.platform && (
+                                <div className="case-study-info-item">
+                                    <span className="case-study-info-label">Platform</span>
+                                    <span className="case-study-info-value">{project.platform}</span>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
                     {/* Services */}
                     {project.services && project.services.length > 0 && (
