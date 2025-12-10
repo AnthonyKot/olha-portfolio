@@ -28,7 +28,7 @@ function App() {
   const { personalInfo } = portfolioConfig;
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/olha-portfolio/">
       <div className="app">
         <Navbar personalInfo={personalInfo} />
         <main>
