@@ -2,6 +2,13 @@ import React from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { portfolioConfig } from '../portfolio.config';
 
+// Helper to resolve asset URLs with base path
+const getAssetUrl = (path) => {
+    if (!path) return '';
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 const CaseStudyPage = () => {
     const { slug } = useParams();
     const project = portfolioConfig.projects.find(p => p.slug === slug);
@@ -54,7 +61,7 @@ const CaseStudyPage = () => {
             {project.heroImage && (
                 <div className="case-study-hero-image">
                     <div className="container">
-                        <img src={project.heroImage} alt={project.title} />
+                        <img src={getAssetUrl(project.heroImage)} alt={project.title} />
                     </div>
                 </div>
             )}
@@ -202,7 +209,7 @@ const CaseStudyPage = () => {
                         <div className="case-study-images">
                             {project.images.map((image, index) => (
                                 <figure key={index} className="case-study-figure">
-                                    <img src={image.src} alt={image.alt || `${project.title} screenshot ${index + 1}`} />
+                                    <img src={getAssetUrl(image.src)} alt={image.alt || `${project.title} screenshot ${index + 1}`} />
                                     {image.caption && <figcaption>{image.caption}</figcaption>}
                                 </figure>
                             ))}

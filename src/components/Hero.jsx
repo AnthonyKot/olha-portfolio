@@ -1,5 +1,13 @@
 import React from 'react';
 
+// Helper to resolve asset URLs with base path
+const getAssetUrl = (path) => {
+    if (!path) return '';
+    // Remove leading slash if present and prepend base URL
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 const Hero = ({ data, personalInfo }) => {
     return (
         <section id="hero" className="hero">
@@ -40,7 +48,7 @@ const Hero = ({ data, personalInfo }) => {
                 </div>
                 <div className="hero-image">
                     <div className="hero-image-wrapper">
-                        {data.image && <img src={data.image} alt={personalInfo?.name || 'Portfolio'} />}
+                        {data.image && <img src={getAssetUrl(data.image)} alt={personalInfo?.name || 'Portfolio'} />}
                     </div>
                 </div>
             </div>

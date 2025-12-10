@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Helper to resolve asset URLs with base path
+const getAssetUrl = (path) => {
+    if (!path) return '';
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 const Projects = ({ projects }) => {
     const [expandedId, setExpandedId] = useState(null);
 
@@ -33,7 +40,7 @@ const Projects = ({ projects }) => {
                         >
                             <div className="project-thumbnail">
                                 {project.thumbnail ? (
-                                    <img src={project.thumbnail} alt={project.title} />
+                                    <img src={getAssetUrl(project.thumbnail)} alt={project.title} />
                                 ) : (
                                     <div style={{
                                         width: '100%',

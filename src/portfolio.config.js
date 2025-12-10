@@ -3,7 +3,7 @@ export const portfolioConfig = {
         name: "Olha Kot",
         title: "Senior Product Designer",
         email: "olhakot.ux@gmail.com",
-        phone: "+31 6 48 13 61 74",
+        phone: "+48 690 606 667",
         socials: {
             linkedin: "https://www.linkedin.com/in/olhakot/",
             instagram: "https://instagram.com/olhakot"
@@ -12,7 +12,7 @@ export const portfolioConfig = {
     hero: {
         headline: "Senior Product Designer specializing in complex B2B & B2C workflows",
         subheadline: "I bring over 8 years of experience designing high-impact UX for SaaS, AI, fintech, and global trade platforms — simplifying complex workflows to drive activation, retention, and conversion.",
-        image: "/assets/cover.avif"
+        image: "assets/cover.avif"
     },
     about: {
         text: ""
@@ -24,8 +24,8 @@ export const portfolioConfig = {
             title: "Silq",
             category: "Freight-forwarder / Supply chain / Order management",
             description: "SILQ powers global manufacturing with local expertise. The supply chain CRM platform covers everything from Tech Pack development, Sampling, Production Monitoring, Quality Assistance, and Shipment.",
-            thumbnail: "/assets/project1.jpg",
-            heroImage: "/assets/silq-hero.png",
+            thumbnail: "assets/project1.jpg",
+            heroImage: "assets/silq-hero.png",
             companyType: "FreightTech Startup",
             role: "Lead Product Designer",
             platform: "Responsive Web Application",
@@ -43,8 +43,8 @@ export const portfolioConfig = {
             challenge: "End-to-end order workflows span multiple manual tools, driving errors and delays.\n\nKey areas addressed:\n• Tech Pack\n• Sampling\n• Purchase order/production\n• Shipment",
             details: "As the Founding Product Designer, I established design processes, developed and maintained a scalable design system, and led the design and iteration of multiple MVP concepts. My role also involved conducting user research and testing, creating diverse concepts and prototypes that empowered engineering teams to deliver high-quality features efficiently.",
             images: [
-                { src: "/assets/silq-mockup1.png", caption: "Silq Dashboard - Order Management" },
-                { src: "/assets/silq-mockup2.png", caption: "Silq Platform Overview" }
+                { src: "assets/silq-mockup1.png", caption: "Silq Dashboard - Order Management" },
+                { src: "assets/silq-mockup2.png", caption: "Silq Platform Overview" }
             ],
             impact: []
         },
@@ -54,8 +54,8 @@ export const portfolioConfig = {
             title: "MyHillebrand",
             category: "International logistics / Freight-forwarder / Supply chain",
             description: "MyHillebrand is an online tool where you can manage all aspects of your orders. Access your shipments, invoices, carbon emissions, temperatures and more, online or using a mobile app.",
-            thumbnail: "/assets/project2.jpg",
-            heroImage: "/assets/hillebrand-hero.png",
+            thumbnail: "assets/project2.jpg",
+            heroImage: "assets/hillebrand-hero.png",
             companyType: "The leading global beverage logistics provider ($1-2B revenue/year)",
             role: "UX/UI Designer",
             team: "2 Designers + Dev Team",
@@ -76,8 +76,8 @@ export const portfolioConfig = {
             title: "Sensible",
             category: "AI / Fintech / SaaS",
             description: "As the first designer at Sensible.so, I addressed key challenges related to user retention and engagement. Through data-driven user testing and strategic design improvements, I successfully increased retention and user satisfaction.",
-            thumbnail: "/assets/project3.jpg",
-            heroImage: "/assets/sensible-hero.png",
+            thumbnail: "assets/project3.jpg",
+            heroImage: "assets/sensible-hero.png",
             companyType: "Startup, AI",
             role: "Senior/Lead Product Designer",
             team: "Product Managers + Engineers",
@@ -90,9 +90,9 @@ export const portfolioConfig = {
             designProcessContent: "Research\nConducted multiple user interviews. Analyzed quantitative data from onboarding funnel metrics. Benchmarked competitors' experience.\n\nIdeation\nGenerated ideas and selected the final concept.\n\nPrototyping\nCreated high-fidelity prototypes for testing.\n\nTesting\nConducted usability tests, gathered feedback, and made iterations.",
             details: "Revamping Onboarding to Improve Activation:\n\n• Fast Path to the \"Aha Moment\": Streamlined the flow to quickly demonstrate the app's core value.\n• Value Over Features: Focused on the benefits users gain, not just the features.\n• Interactive Onboarding: Introduced Template Library for hands-on exploration.\n• Self-Service Flow: Built a scalable, independent onboarding option.\n\nBuilding Trust to Retain Users:\n\n• AI Transparency Mechanisms: Introduced confidence signals for each data extraction.\n• Empowering Users Through Control: Added advanced settings to customize LLM behavior.\n• Human Review Features: Enabled users to interact with and correct AI outputs.",
             images: [
-                { src: "/assets/sensible-dashboard.avif", caption: "Sensible Dashboard" },
-                { src: "/assets/sensible-onboarding.avif", caption: "Streamlined Onboarding Flow" },
-                { src: "/assets/sensible-ai-editor.avif", caption: "AI-Powered Document Editor" }
+                { src: "assets/sensible-dashboard.avif", caption: "Sensible Dashboard" },
+                { src: "assets/sensible-onboarding.avif", caption: "Streamlined Onboarding Flow" },
+                { src: "assets/sensible-ai-editor.avif", caption: "AI-Powered Document Editor" }
             ],
             impact: [
                 { value: "35%", label: "Increase in Retention Rates" },
@@ -106,8 +106,8 @@ export const portfolioConfig = {
             title: "CMS for Banks",
             category: "Fintech / B2B / Banking",
             description: "Product Designer for Backbase's CMS for Banks. Banking Applications have features like A/B testing, Entitlements, Campaigns, Remote Config, Role/Policy Based Navigation, and behaviors based on audiences.",
-            thumbnail: "/assets/project4.jpg",
-            heroImage: "/assets/backbase-hero.jpg",
+            thumbnail: "assets/project4.jpg",
+            heroImage: "assets/backbase-hero.jpg",
             companyType: "Fintech Software Provider ($63.9M/year)",
             role: "Product Designer",
             duration: "1 year (2019-2020)",
@@ -124,8 +124,8 @@ export const portfolioConfig = {
             challenge: "I was heavily involved in research activities from creating prototypes to support testing right down to helping researchers take notes and synthesize results. Working closely with product owners, researchers, solution architects, engineers, and senior management.",
             details: "Key Projects:\n\n1. Customer Engagement App\nEngagement platform that enables interaction with customers across any digital channel.\n\n2. Content Approvals App\nContent Approvals app allows content managers to modify content and metadata on the production environment safely and isolated, send these changes for approval, and publish them.\n\n3. Design System\nCreated a scalable design system based on Material Design guidelines.",
             images: [
-                { src: "/assets/backbase-typography.avif", caption: "Design System Typography" },
-                { src: "/assets/backbase-screenshot.avif", caption: "CMS Application Interface" }
+                { src: "assets/backbase-typography.avif", caption: "Design System Typography" },
+                { src: "assets/backbase-screenshot.avif", caption: "CMS Application Interface" }
             ],
             impact: []
         }
